@@ -2,6 +2,14 @@ version: '3.1'
 
 services:
 
+  angular:
+    image: angular:latest
+    build:
+      context: D:/Angular/angular-se-track
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+
   performer:
     image: performer-service:latest
     build:
