@@ -3,7 +3,7 @@ version: '3.1'
 services:
 
   angular:
-    image: angular:latest
+    image: jelmerdijkstra/angular-se-track:latest
     build:
       context: D:/Angular/angular-se-track
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
       - "4200:80"
 
   performer:
-    image: performer-service:latest
+    image: jelmerdijkstra/performer-service:latest
     build:
       context: C:/Users/JEDIJKST/IdeaProjects/se_track_performer
       dockerfile: Dockerfile
@@ -39,7 +39,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   concert:
-    image: concert-service:latest
+    image: jelmerdijkstra/concert-service:latest
     build:
       context: C:/Users/JEDIJKST/IdeaProjects/se_track_concert
       dockerfile: Dockerfile
@@ -72,7 +72,7 @@ services:
       - micro-network
 
   review:
-    image: review-service:latest
+    image: jelmerdijkstra/review-service:latest
     build:
       context: C:/Users/JEDIJKST/IdeaProjects/se_track_review
       dockerfile: Dockerfile
