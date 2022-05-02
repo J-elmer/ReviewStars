@@ -50,7 +50,7 @@ services:
     depends_on:
       - postgresql
 
-  postgresql:
+  postgres:
     image: postgres
     restart: always
     environment:
