@@ -23,6 +23,7 @@ services:
       - mysql
     environment:
       - spring.datasource.url=jdbc:mysql://mysql:3306/performer?createDatabaseIfNotExist=true
+      - concert.api=http://host.docker.internal:9090/concert/
 
   mysql:
     image: mysql
@@ -49,6 +50,9 @@ services:
       - micro-network
     depends_on:
       - postgres
+    environment:
+      - performer.api=http://host.docker.internal:6060/performer/
+      - review.api=http://host.docker.internal:7070/review/
 
   postgres:
     image: postgres
@@ -85,6 +89,7 @@ services:
     environment:
       - SPRING_DATA_MONGODB_HOST=mongo:27017
       - SPRING_DATA_MONGODB_DATABASE=reviews
+      - concert.api=http://host.docker.internal:9090/concert/
 
   mongo:
     image: mongo
