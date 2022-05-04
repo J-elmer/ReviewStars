@@ -48,7 +48,7 @@ services:
     networks:
       - micro-network
     depends_on:
-      - postgresql
+      - postgres
 
   postgres:
     image: postgres
