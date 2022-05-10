@@ -4,17 +4,11 @@ services:
 
   angular:
     image: jelmerdijkstra/angular-se-track:latest
-    build:
-      context: D:/Angular/angular-se-track
-      dockerfile: Dockerfile
     ports:
       - "4200:80"
 
   performer:
     image: jelmerdijkstra/performer-service:latest
-    build:
-      context: C:/Users/JEDIJKST/IdeaProjects/se_track_performer
-      dockerfile: Dockerfile
     ports:
       - "6060:6060"
     networks:
@@ -41,9 +35,6 @@ services:
 
   concert:
     image: jelmerdijkstra/concert-service:latest
-    build:
-      context: C:/Users/JEDIJKST/IdeaProjects/se_track_concert
-      dockerfile: Dockerfile
     ports:
       - "9090:9090"
     networks:
@@ -77,9 +68,6 @@ services:
 
   review:
     image: jelmerdijkstra/review-service:latest
-    build:
-      context: C:/Users/JEDIJKST/IdeaProjects/se_track_review
-      dockerfile: Dockerfile
     ports:
       - "7070:7070"
     networks:
