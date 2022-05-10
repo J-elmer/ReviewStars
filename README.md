@@ -49,7 +49,7 @@ After you've updated the file, you can run docker-compose up -d
 
 ## Reviewing the code
 
-If you are interested in the code of one of the microservices or the backend, please visit the individual repositories:
+If you are interested in the code of one of the microservices or the frontend, please visit the individual repositories:
 
 [Angular frontend](https://github.com/J-elmer/review-stars-frontend)
 
