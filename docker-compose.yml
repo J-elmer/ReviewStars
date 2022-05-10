@@ -18,6 +18,8 @@ services:
     environment:
       - spring.datasource.url=jdbc:mysql://mysql:3306/performer?createDatabaseIfNotExist=true
       - concert.api=http://host.docker.internal:9090/concert/
+#      when running on linux, comment out the line above and comment in the line below
+#      - concert.api=http://localhost:9090/concert/
 
   mysql:
     image: mysql
@@ -44,6 +46,9 @@ services:
     environment:
       - performer.api=http://host.docker.internal:6060/performer/
       - review.api=http://host.docker.internal:7070/review/
+#      when running on linux, comment out the two lines above and comment in the two lines below
+#      - performer.api=http://localhost:6060/performer/
+#      - review.api=http://localhost:7070/review/
 
   postgres:
     image: postgres
@@ -78,6 +83,8 @@ services:
       - SPRING_DATA_MONGODB_HOST=mongo:27017
       - SPRING_DATA_MONGODB_DATABASE=reviews
       - concert.api=http://host.docker.internal:9090/concert/
+#       when running on linux, comment out the line above and comment in the line below
+#      - concert.api=http://localhost:9090/concert/
 
   mongo:
     image: mongo
