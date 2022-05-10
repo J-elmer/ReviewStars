@@ -33,6 +33,20 @@ docker-compose up -d
 
 Once the containers are running, navigate to http://localhost:4200 and you should see the app.
 
+
+**Running on Linux? Extra steps**
+
+When runnning on Linux, Docker resolves internal URL's through localhost instead of host.docker.internal. If you want to run the application on linux follow these extra steps:
+
+- go the application folder
+- open docker-compose.yml in an editor
+- comment out line 20; comment in line 22
+- comment out lines 47 and 48; comment in lines 50 and 51
+- comment out line 85; comment in line 87
+
+After you've updated the file, you can run docker-compose up -d
+
+
 ## Reviewing the code
 
 If you are interested in the code of one of the microservices or the backend, please visit the individual repositories:
