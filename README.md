@@ -3,7 +3,7 @@
 
 Welcome to ReviewStars where you can see upcoming concerts and leave your reviews for concerts you have visited. 
 
-This is an application build in order to experiment a little bit with how to set up several back end applications in Spring Boot and how to make sure data remains consistent between them. This application helped me to understand the concept of microservices a bit better. It is also my first application in which I built a Angular frontend. 
+This is an application build in order to experiment with how to set up several back end applications in Java [Spring Boot](https://spring.io/projects/spring-boot) and how to make sure data remains consistent between them. This application helped me to understand the concept of microservices a bit better. It is also my first application in which I built a [Angular](https://angular.io/) frontend. 
 
 Here is a schematic overview of the application and how it is all connected:
 
