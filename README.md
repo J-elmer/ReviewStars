@@ -36,7 +36,7 @@ Once the containers are running, navigate to http://localhost:4200 and you shoul
 
 **Running on Linux? Extra steps**
 
-When runnning on Linux, Docker resolves internal URL's through localhost instead of host.docker.internal. If you want to run the application on Linux follow these extra steps:
+When runnning on Linux, Docker resolves internal URL's through localhost instead of host.docker.internal. If you want to run the application on Linux, follow these extra steps:
 
 - go the application folder
 - open docker-compose.yml in an editor
